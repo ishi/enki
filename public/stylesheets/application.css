@@ -1,57 +1,76 @@
 /* High level containers */
-body
+html, body
 {
-  color: black;
-
-  font: normal 12px verdana, arial, helvetica, sans-serif;
-  line-height: 1.5;
   padding: 0px;
   margin: 0px;
+}
+
+body
+{
+  background-color: #282828;
+  color: #949494;
+  font: normal 12px verdana, arial, helvetica, sans-serif;
+  line-height: 1.5;
 }
 
 #page_container
 {
   width: 70em;
-  position: absolute;
-  min-height: 400px;
 
-  color: black;
+  margin: auto;
+}
 
-  margin-top: 5px;
-  padding-left: 10px;
-  border-right: solid 1px #aaaaaa;
-  border-top: solid 1px #aaaaaa;
+#page_heading, #navigation, #footer, #main
+{
+  background-color: #333;
+  border: 1px solid dimGray;
+}
+
+#page_heading
+{
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  border-top: 0;
+  height: 3,4em;
+}
+
+#page_body
+{
+  position: relative;
 }
 
 #footer
 {
-  position: absolute;
-  bottom: -1px;
-  right: -1px;
   font-size: 8pt;
   padding-top: 5px;
   padding-right: 15px;
   padding-bottom: 5px;
   padding-left: 5px;
   color: gray;
-  border-bottom: solid 1px #aaaaaa;
+  clear: both;
+  float: right;
+  margin-top: 0.5em;
 }
 
 /* Headings */
-h1#page_heading
+#page_heading h1
 {
-  font-size: 24pt;
+  display: inline;
+  color: #949494;
+  font: normal normal normal 1,4em/normal Verdana;
+  letter-spacing: 0,25em;
 }
 
 h2
 {
   font-size: 1.2em;
-  color: #333333;
+  color: #949494;
 }
 
 h2 a, h3, h4, h5
 {
-  color: #333333;
+  color: #949494;
 }
 
 /* Text */
@@ -79,8 +98,7 @@ strong
 
 a
 {
-  color: #000051;
-
+  color: #949494;
   text-decoration: none;
 }
 
@@ -108,18 +126,9 @@ img
 /* Two columns */
 #navigation
 {
-  position: absolute;
   width: 10em;
-  top: -1px;
-  right: -1px;
-
-  border: none;
-  border-left: solid 1px #aaaaaa;
-  border-bottom: solid 1px #aaaaaa;
-  border-top: solid 1px white;
-  border-right: solid 1px white;
-
-  padding: 10px;
+  padding: 1em;
+  float: left;
 }
 
 #navigation h2
@@ -169,9 +178,11 @@ img
 
 #main
 {
+  min-height: 400px;
+  margin-left: 13em;
   padding-right: 150px;
-  padding-left: 0px;
-  padding-top: 15px;
+  padding-left: 1.5em;
+  padding-top: 1em;
   padding-bottom: 40px;
 }
 
