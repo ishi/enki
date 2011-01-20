@@ -1,7 +1,7 @@
 # Configuration options for your blog - customise to taste
 # This file contains no secret information, so can be stored in source control (unlike database.yml)
-title: Radosław Zieliński
-sub_title: Blob techniczny.
+title: /home/ishi~> Java, RoR, PHP
+subtitle: Bo programowanie jest pasją ...
 url:   http://zielinski.cc
 author:
   name:    Radosław Zieliński        # For copyright notice and ATOM feeds

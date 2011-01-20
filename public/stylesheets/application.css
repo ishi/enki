@@ -1,7 +1,7 @@
 /* High level containers */
 body
 {
-  color: black;
+  background-color: #EFF0F1;
 
   font: normal 12px verdana, arial, helvetica, sans-serif;
   line-height: 1.5;
@@ -9,38 +9,56 @@ body
   margin: 0px;
 }
 
+#page_heading, #main, #navigation
+{
+  background-color: white;
+}
+
 #page_container
 {
   width: 70em;
-  position: absolute;
   min-height: 400px;
-
   color: black;
-
-  margin-top: 5px;
-  padding-left: 10px;
-  border-right: solid 1px #aaaaaa;
-  border-top: solid 1px #aaaaaa;
+  margin: 0 auto;
+  clear: both;
 }
 
 #footer
 {
   position: absolute;
-  bottom: -1px;
+  bottom: -2.5em;
   right: -1px;
   font-size: 8pt;
-  padding-top: 5px;
-  padding-right: 15px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-top: 0.5em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
   color: gray;
-  border-bottom: solid 1px #aaaaaa;
+  border-top: solid 1px #aaaaaa;
 }
 
 /* Headings */
-h1#page_heading
+#page_heading 
+{
+  height: 5em;
+  padding: 2em;
+  padding-top: 1em;
+  border-bottom: 1px solid #A7A8A9;
+  margin-bottom: 1em;
+}
+
+#page_heading h1
 {
   font-size: 24pt;
+  padding: 0;
+  margin: 0;
+}
+
+#page_heading h2
+{
+  font-size: 16pt;
+  margin: 0.1em;
+  margin-left: 5em;
 }
 
 h2
@@ -108,18 +126,14 @@ img
 /* Two columns */
 #navigation
 {
-  position: absolute;
-  width: 10em;
+  float: right;
+  width: 13em;
   top: -1px;
   right: -1px;
 
   border: none;
   border-left: solid 1px #aaaaaa;
-  border-bottom: solid 1px #aaaaaa;
-  border-top: solid 1px white;
-  border-right: solid 1px white;
-
-  padding: 10px;
+  padding: 1em;
 }
 
 #navigation h2
@@ -169,10 +183,9 @@ img
 
 #main
 {
-  padding-right: 150px;
-  padding-left: 0px;
-  padding-top: 15px;
-  padding-bottom: 40px;
+  position: relative;
+  padding: 2em;
+  margin-right: 16em;
 }
 
 div.meta
@@ -191,6 +204,7 @@ div.meta
   display: inline;
   color: #cccccc;
   font-size: 10pt;
+
 }
 .archive-month .tags
 {
