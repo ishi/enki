@@ -57,16 +57,19 @@ pl:
         title: "Editing comment by %{author}"
     dashboard:
       comment:
-        one: "1 comment"
-        other: "%{count} comments"
-      latest_comments: "Latest Comments"
-      latest_posts: "Latest Posts"
+        one: "1 komentarz"
+	few: : "%{count} komentarze"
+        other: "%{count} komentarzy"
+      latest_comments: "Ostatnie Komentarze"
+      latest_posts: "Ostatnie Posty"
       post:
         one: "1 post"
-        other: "%{count} posts"
+	few: "%{count} posty"
+        other: "%{count} postow"
       tag:
         one: "1 tag"
-        other: "%{count} tags"
+	few: "%{count} tagi"
+        other: "%{count} tagow"
     health:
       title: "Health"
     navigation:
