@@ -28,7 +28,7 @@
       <% unless category_links_for_navigation.empty? -%>
         <h2><%= t 'pages.menu.categories_title' %></h2>
         <ul>
-          <% category_links_for_navigation.each do |link| -%>
+          <% page_links_for_navigation.each do |link| -%>
             <li><%= link_to(link.name, link.url) %></li>
           <% end -%>
         </ul>
@@ -52,6 +52,5 @@
     </div>
 
    
-    
 </body>
 </html>
